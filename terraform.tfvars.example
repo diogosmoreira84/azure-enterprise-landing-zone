@@ -1,0 +1,16 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is ignored by Git.
+
+subscription_id       = "00000000-0000-0000-0000-000000000000"
+prefix                = "contoso"
+environment           = "dev"
+location              = "northeurope"
+budget_amount         = 5
+budget_contact_emails = ["you@example.com"]
+
+# Set to false if you do not have permissions at tenant root.
+create_management_groups      = true
+root_management_group_name    = "Contoso"
+subscription_management_group = "sandbox"
+
+# Azure Firewall has a significant fixed monthly cost. Enable only when needed.
+enable_firewall = false
